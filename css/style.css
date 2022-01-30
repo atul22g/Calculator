@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: none;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #173459,
+    #903c59 15%,
+    #78969d 20%
+  );
+}
+
+#heading {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  font-weight: bolder;
+  width: 100%;
+  height: 15vh;
+}
+
+#screen {
+  display: flex;
+  word-wrap: unset;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 3em;
+  border: none;
+  padding-left: 25px;
+  width: 100%;
+  height: 27vh;
+  font-weight: bold;
+}
+
+table tr td button {
+  width: 24.5vw;
+  height: 11.2vh;
+  color: white;
+  font-size: 2.5em;
+  border: none;
+  background-color: transparent;
+}
+
+table tr td button:hover {
+  color: black;
+}
+
+#btn {
+  font-size: 5em;
+  height: 22vh;
+}
+
+@media screen and (max-width: 250px) {
+  body {
+    display: none;
+  }
+}

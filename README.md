@@ -2,7 +2,7 @@
 ### 😎**My Name is Atul**
 
 ## *I am Web Developer*
-To secure a challenging posting in a Reputable organization to expand my Learning, knowledge and skills.
+Hi, My name is Atul and I am a Web Developer. I am Continuously learning and improving web Developer Skills.
 
 ### **Skills and Experience :)**
 - Web Developer

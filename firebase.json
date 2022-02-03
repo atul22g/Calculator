@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "atul22g-calculator",
     "public": "public",
     "ignore": [
       "firebase.json",

@@ -25,6 +25,6 @@ for (item of buttons) {
 
 // loading
 var preloader = document.getElementById("loading");
-function myFunction() {
+function loading() {
   preloader.style.display = "none";
 }

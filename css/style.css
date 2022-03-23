@@ -4,40 +4,36 @@
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+html {
+  font-size: 62.5%;
 }
 
 table {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   overflow: hidden;
   scroll-behavior: smooth;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #173459,
-    #903c59 15%,
-    #78969d 20%
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
+  background-image: linear-gradient(#e66465, #9198e5);
 }
 
 #heading {
   font-family: "Dancing Script", cursive;
   padding-top: 10px;
   text-align: center;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: bolder;
-  color: white;
+  color: #000;
   font-weight: bolder;
   width: 100%;
   height: 15vh;
@@ -49,7 +45,7 @@ table {
   word-wrap: unset;
   background: transparent;
   outline: none;
-  color: white;
+  color: #fff;
   font-size: 3em;
   font-weight: bold;
   border-radius: 30px;
@@ -59,7 +55,7 @@ table {
   height: 24vh;
   font-weight: bold;
   overflow: scroll;
-  border: 2px solid white;
+  border: 2px solid #fff;
 }
 
 table tr td button {
@@ -69,20 +65,21 @@ table tr td button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: white;
-  font-size: 2.5em;
+  color: #fff;
+  font-size: 3.5em;
   font-weight: bold;
   border: none;
   background-color: transparent;
   cursor: pointer;
   border-radius: 20px;
   display: block;
-  margin: 7px auto;
+  margin: 1.6rem auto;
+  margin-top: 1rem;
   font-family: "Playball", cursive;
 }
 
 table tr td button:hover {
-  color: black;
+  color: #000;
 }
 
 #btn {
@@ -105,11 +102,11 @@ table tr td button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #00796b;
 }
 
@@ -119,31 +116,31 @@ table tr td button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #loading .center-div .outer-ring {
   width: 100px;
   height: 100px;
-  border-top: 4px solid #bdbdbd;
-  border-bottom: 4px solid #bdbdbd;
+  border-top: 4px solid var(--border);
+  border-bottom: 4px solid var(--border);
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   border-radius: 50%;
   position: absolute;
   -webkit-animation: rototering 2s linear infinite;
-  animation: rototering 2s linear infinite;
+          animation: rototering 2s linear infinite;
 }
 
 #loading .center-div .middle-ring {
   width: 80px;
   height: 80px;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
+  border-top: 4px solid var(--text);
+  border-bottom: 4px solid var(--text);
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   border-radius: 50%;
@@ -154,45 +151,45 @@ table tr td button:hover {
 #loading .center-div .inner-ring {
   width: 60px;
   height: 60px;
-  border-top: 4px solid #bdbdbd;
-  border-bottom: 4px solid #bdbdbd;
+  border-top: 4px solid var(--border);
+  border-bottom: 4px solid var(--border);
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   border-radius: 50%;
   position: absolute;
   -webkit-animation: rototering 2s linear infinite;
-  animation: rototering 2s linear infinite;
+          animation: rototering 2s linear infinite;
 }
 
 #loading .center-div .dot {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #b2dfdb;
+  background-color: var(--border);
   position: absolute;
   -webkit-animation: rototering 2s linear infinite;
-  animation: rototering 2s linear infinite;
+          animation: rototering 2s linear infinite;
 }
 
 @-webkit-keyframes rototering {
   0% {
     -webkit-transform: rotate(0deg) scale(0.3);
-    transform: rotate(0deg) scale(0.3);
+            transform: rotate(0deg) scale(0.3);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(1.2);
-    transform: rotate(360deg) scale(1.2);
+            transform: rotate(360deg) scale(1.2);
   }
 }
 
 @keyframes rototering {
   0% {
     -webkit-transform: rotate(0deg) scale(0.3);
-    transform: rotate(0deg) scale(0.3);
+            transform: rotate(0deg) scale(0.3);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(1.2);
-    transform: rotate(360deg) scale(1.2);
+            transform: rotate(360deg) scale(1.2);
   }
 }
 /*# sourceMappingURL=style.css.map */

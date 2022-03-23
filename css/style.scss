@@ -99,8 +99,8 @@ table tr td button {
     .outer-ring {
       width: 100px;
       height: 100px;
-      border-top: 4px solid var(--border);
-      border-bottom: 4px solid var(--border);
+      border-top: 4px solid $border;
+      border-bottom: 4px solid $border;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -110,8 +110,8 @@ table tr td button {
     .middle-ring {
       width: 80px;
       height: 80px;
-      border-top: 4px solid var(--text);
-      border-bottom: 4px solid var(--text);
+      border-top: 4px solid $text;
+      border-bottom: 4px solid $text;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -121,8 +121,8 @@ table tr td button {
     .inner-ring {
       width: 60px;
       height: 60px;
-      border-top: 4px solid var(--border);
-      border-bottom: 4px solid var(--border);
+      border-top: 4px solid $border;
+      border-bottom: 4px solid $border;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -133,7 +133,7 @@ table tr td button {
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: var(--border);
+      background-color: $border;
       position: absolute;
       animation: rototering 2s linear infinite;
     }

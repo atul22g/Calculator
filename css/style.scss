@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playball&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playball&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
-body::-webkit-scrollbar{
-  display: none;
+:root {
+  --bg: repeating-linear-gradient(45deg, #173459, #903c59 15%, #78969d 20%);
+  --text: #fff;
+  --hover: #000;
+  --bg2: #00796b;
+  --border: #bdbdbd;
 }
-
+html {
+  font-size: 62.5%;
+}
 table {
   width: 100%;
   height: 100%;
@@ -16,32 +22,27 @@ table {
   border: none;
   overflow: hidden;
   scroll-behavior: smooth;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #173459,
-    #903c59 15%,
-    #78969d 20%
-  );
+  background-image: var(--bg);
 }
 #heading {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   padding-top: 10px;
   text-align: center;
   font-size: 3em;
   font-weight: bolder;
-  color: white;
+  color: var(--text);
   font-weight: bolder;
   width: 100%;
   height: 15vh;
 }
 
 #screen {
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
   display: block;
   word-wrap: unset;
   background: transparent;
   outline: none;
-  color: white;
+  color: var(--text);
   font-size: 3em;
   font-weight: bold;
   border-radius: 30px;
@@ -51,13 +52,13 @@ table {
   height: 24vh;
   font-weight: bold;
   overflow: scroll;
-  border: 2px solid white;
+  border: 2px solid var(--text);
 }
 
 table tr td button {
   width: fit-content;
   height: fit-content;
-  color: white;
+  color: var(--text);
   font-size: 2.5em;
   font-weight: bold;
   border: none;
@@ -66,9 +67,9 @@ table tr td button {
   border-radius: 20px;
   display: block;
   margin: 7px auto;
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
   &:hover {
-    color: black;
+    color: var(--hover);
   }
 }
 #btn {
@@ -82,14 +83,14 @@ table tr td button {
   }
 }
 /* loading */
-#loading{
+#loading {
   position: fixed;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00796b;
+  background-color: var(--bg2);
   .center-div {
     position: relative;
     display: flex;
@@ -98,8 +99,8 @@ table tr td button {
     .outer-ring {
       width: 100px;
       height: 100px;
-      border-top: 4px solid #bdbdbd;
-      border-bottom: 4px solid #bdbdbd;
+      border-top: 4px solid var(--border);
+      border-bottom: 4px solid var(--border);
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -109,8 +110,8 @@ table tr td button {
     .middle-ring {
       width: 80px;
       height: 80px;
-      border-top: 4px solid white;
-      border-bottom: 4px solid white;
+      border-top: 4px solid var(--text);
+      border-bottom: 4px solid var(--text);
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -120,8 +121,8 @@ table tr td button {
     .inner-ring {
       width: 60px;
       height: 60px;
-      border-top: 4px solid #bdbdbd;
-      border-bottom: 4px solid #bdbdbd;
+      border-top: 4px solid var(--border);
+      border-bottom: 4px solid var(--border);
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -132,7 +133,7 @@ table tr td button {
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: #b2dfdb;
+      background-color: var(--border);
       position: absolute;
       animation: rototering 2s linear infinite;
     }
